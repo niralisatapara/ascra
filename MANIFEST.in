@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include ascra *.css
+recursive-include ascra *.csv
+recursive-include ascra *.html
+recursive-include ascra *.ico
+recursive-include ascra *.js
+recursive-include ascra *.json
+recursive-include ascra *.md
+recursive-include ascra *.png
+recursive-include ascra *.py
+recursive-include ascra *.svg
+recursive-include ascra *.txt
+recursive-exclude ascra *.pyc
