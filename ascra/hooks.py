@@ -7,8 +7,18 @@ app_description = "Testing App"
 app_icon = "octicon octicon-file-directory"
 app_color = "grey"
 app_email = "niralisatapara@gmail.com"
-app_license = "GPL [6~[3~[2~"
+app_license = "GPL 3.0"
 
+
+override_whitelisted_methods = {
+	"erpnext.controllers.item_variant.create_variant": "ascra.api.create_variant"
+}
+
+doc_events = {
+	"Item": {
+		"validate": "ascra.api.item_validate"
+	}
+}
 # Includes in <head>
 # ------------------
 
@@ -19,7 +29,6 @@ app_license = "GPL [6~[3~[2~"
 # include js, css files in header of web template
 # web_include_css = "/assets/ascra/css/ascra.css"
 # web_include_js = "/assets/ascra/js/ascra.js"
-
 # include custom scss in every website theme (without file extension ".scss")
 # website_theme_scss = "ascra/public/scss/website"
 
