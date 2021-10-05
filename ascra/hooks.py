@@ -10,9 +10,9 @@ app_email = "niralisatapara@gmail.com"
 app_license = "GPL 3.0"
 
 
-override_whitelisted_methods = {
-	"erpnext.controllers.item_variant.create_variant": "ascra.api.create_variant"
-}
+# override_whitelisted_methods = {
+# 	"erpnext.controllers.item_variant.create_variant": "ascra.api.create_variant"
+# }
 
 doc_events = {
 	"Item": {
